@@ -12,129 +12,324 @@
 
     <link rel="stylesheet" href="styles/style.css">
     <title>Grocerie</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <!-- JavaScript -->
+
+
+
+
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light container-fluid">
-        <a class="navbar-brand" href="#"><img src="photos/logo-large.png" alt="logo"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="ml-auto">
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control search-bar-input" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="photos/search-icon.png"
-                        alt="Search"></button>
-            </form>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Categories
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Fruits and vegetables</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact Us</a>
-                </li>
-
-            </ul>
-
-        </div>
-    </nav>
-
-    <!-- OFFERS CAROUSEL -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="photos/offers-carousel/offer1.webp" alt="First slide">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light container-fluid fixed-top" id="navbar">
+            <a class="navbar-brand" href="#"><img id="logo" src="photos/logo-large.png" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="ml-auto">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control search-bar-input" id="SearchBar" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><img src="photos/search-icon.png"
+                            alt="Search"></button>
+                </form>
             </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="photos/offers-carousel/offer2.webp" alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="photos/offers-carousel/offer3.webp" alt="Third slide">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div>
-        <h1 class="heading2">Best Sellers</h1>
-    </div>
-    <div>
-        <h1 class="heading2">Previously Ordered</h1>
-    </div>
-    
-    <div>
-        <h1 class="heading2">Sanitation and Hygiene</h1>
-    </div>
-    <div>
-        <h1 class="heading2">Fruits and Vegetables</h1>
-    </div>
 
-    <div class="container-fluid">
-        <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="9000">
-            <div class="carousel-inner row w-100 mx-auto" role="listbox">
-                <div class="carousel-item col-md-4 active slider-frame">
-                    <img class="img-fluid mx-auto d-block" src="//placehold.it/600x400/000/fff?text=1" alt="slide 1">
-                </div>
-                <div class="carousel-item col-md-4 slider-frame">
-                    <img class="img-fluid mx-auto d-block slider-frame" src="//placehold.it/600x400?text=2" alt="slide 2">
-                </div>
-                <div class="carousel-item col-md-4 slider-frame">
-                    <img class="img-fluid mx-auto d-block slider-frame" src="//placehold.it/600x400?text=3" alt="slide 3">
-                </div>
-                <div class="carousel-item col-md-4 slider-frame">
-                    <img class="img-fluid mx-auto d-block slider-frame" src="//placehold.it/600x400?text=4" alt="slide 4">
-                </div>
-                <div class="carousel-item col-md-4 slider-frame">
-                    <img class="img-fluid mx-auto d-block slider-frame" src="//placehold.it/600x400?text=5" alt="slide 5">
-                </div>
-                <div class="carousel-item col-md-4 slider-frame">
-                    <img class="img-fluid mx-auto d-block slider-frame" src="//placehold.it/600x400?text=6" alt="slide 6">
-                </div>
-                <div class="carousel-item col-md-4 slider-frame">
-                    <img class="img-fluid mx-auto d-block slider-frame" src="//placehold.it/600x400?text=7" alt="slide 7">
-                </div>
-                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Fruits and vegetables</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+
+                </ul>
+
             </div>
-            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-                <i class="fa fa-chevron-left fa-lg text-muted"></i>
+        </nav>
+        <div class="website-body">
+        <!-- OFFERS CAROUSEL -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="photos/offers-carousel/offer1.webp" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="photos/offers-carousel/offer2.webp" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="photos/offers-carousel/offer3.webp" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-                <i class="fa fa-chevron-right fa-lg text-muted"></i>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>
-        </div> 
+        </div>
+        <div>
+            <h1 class="heading2">Best Sellers</h1>
+            <div class="main-carousel" data-flickity='{"groupCells": true, "autoPlay": true, "wrapAround": true}'>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="photos/best-sellers/close-up-everfresh-anti-germ-gel-toothpaste-red-hot.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Close Up toothpaste</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/himalaya-purifying-neem-face-wash.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Himalaya Face Wash</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="photos/best-sellers/lizol-disinfectant-surface-floor-cleaner-liquid-citrus-kills-999-germs.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Lizol Disinfectant</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/maggi-cheese-maraconi-pazzta.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Maggi Cheese Pazzta</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/surf-excel-easy-wash-detergent-powder.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Surf Excel Detergent</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="heading2">Previously Ordered</h1>
+            <div class="main-carousel" data-flickity='{"groupCells": true, "autoPlay": true, "wrapAround": true}'>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="photos/best-sellers/close-up-everfresh-anti-germ-gel-toothpaste-red-hot.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Close Up toothpaste</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/himalaya-purifying-neem-face-wash.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Himalaya Face Wash</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="photos/best-sellers/lizol-disinfectant-surface-floor-cleaner-liquid-citrus-kills-999-germs.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Lizol Disinfectant</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/maggi-cheese-maraconi-pazzta.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Maggi Cheese Pazzta</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/surf-excel-easy-wash-detergent-powder.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Surf Excel Detergent</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="heading2">Sanitation and Hygiene</h1>
+            <div class="main-carousel" data-flickity='{"groupCells": true, "autoPlay": true, "wrapAround": true}'>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="photos/best-sellers/close-up-everfresh-anti-germ-gel-toothpaste-red-hot.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Close Up toothpaste</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/himalaya-purifying-neem-face-wash.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Himalaya Face Wash</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="photos/best-sellers/lizol-disinfectant-surface-floor-cleaner-liquid-citrus-kills-999-germs.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Lizol Disinfectant</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/maggi-cheese-maraconi-pazzta.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Maggi Cheese Pazzta</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/surf-excel-easy-wash-detergent-powder.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Surf Excel Detergent</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h1 class="heading2">Fruits and Vegetables</h1>
+            <div class="main-carousel" data-flickity='{"groupCells": true, "autoPlay": true, "wrapAround": true}'>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="photos/best-sellers/close-up-everfresh-anti-germ-gel-toothpaste-red-hot.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Close Up toothpaste</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/himalaya-purifying-neem-face-wash.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Himalaya Face Wash</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top"
+                            src="photos/best-sellers/lizol-disinfectant-surface-floor-cleaner-liquid-citrus-kills-999-germs.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Lizol Disinfectant</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/maggi-cheese-maraconi-pazzta.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Maggi Cheese Pazzta</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cell">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="photos/best-sellers/surf-excel-easy-wash-detergent-powder.webp"
+                            alt="Card image cap">
+                        <div class="card-body">
+                            <p class="card-title">Surf Excel Detergent</p>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -147,6 +342,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+    <script src="scripts/script.js" charset="UTF-8"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

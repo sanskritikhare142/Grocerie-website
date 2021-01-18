@@ -1,8 +1,13 @@
-.search-bar-input{
+/* .search-bar-input{
     width:50%;
+} */
+body{
+  background-color: #ff9900;
 }
-
-/* .SearchBar {
+.website-body{
+  padding-top: 250px; 
+}
+.SearchBar {
     position: absolute;
     top: 355px;
     left: 575px;
@@ -11,69 +16,74 @@
 .SearchBar input {
     height: 30px;
     width: 50px;
+} 
+#navbar {
+  overflow: hidden;
+  background-color: #f9e0ae;
+  padding: 2px 2px; /* Large padding which will shrink on scroll (using JS) */
+  transition: 0.1s; /* Adds a transition effect when the padding is decreased */
+  width: 100%;
+  top: 0; /* At the top */
+  z-index: 99; 
+}
+/* Style the logo
+#navbar #logo {
+  font-size: 35px;
+  font-weight: bold;
+  transition: 0.1s;
+} */
+/* Add responsiveness - on screens less than 580px wide, display the navbar vertically instead of horizontally */
+@media screen and (max-width: 580px) {
+  #navbar {
+    padding: 20px 10px !important; /* Use !important to make sure that JavaScript doesn't override the padding on small screens */
+  }
+  #navbar a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  #navbar-right {
+    float: none;
+  }
+}
+/* external css: flickity.css */
+/* 
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #EEE;
+}
+
+.carousel-cell {
+  width: 28%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell.is-selected {
+  background: #ED2;
+}
+
+/* cell number */
+/* .carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} */ 
+/* .main-carousel{
+  height:10vh;
 } */
 
-
-@media (min-width: 768px) {
-
-    /* show 3 items */
-    .slider.active,
-    .carousel-inner .active+.carousel-item.slider-frame,
-    .carousel-inner .active+.carousel-item+.carousel-item.slider-frame {
-        display: block;
-    }
-
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left).slider-frame,
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item.slider-frame,
-    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item.slider-frame {
-        transition: none;
-    }
-
-    .carousel-inner .carousel-item-next.slider-frame,
-    .carousel-inner .carousel-item-prev.slider-frame {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-
-    .carousel-inner .active.carousel-item+.carousel-item+.carousel-item+.carousel-item.slider-frame {
-        position: absolute;
-        top: 0;
-        right: -33.3333%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    /* left or forward direction */
-    .active.carousel-item-left+.carousel-item-next.carousel-item-left.slider-frame,
-    .carousel-item-next.carousel-item-left+.carousel-item.slider-frame,
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item.slider-frame,
-    .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item.slider-frame {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    /* farthest right hidden item must be abso position for animations */
-    .carousel-inner .carousel-item-prev.carousel-item-right.slider-frame {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    /* right or prev direction */
-    .active.carousel-item-right+.carousel-item-prev.carousel-item-right.slider-frame,
-    .carousel-item-prev.carousel-item-right+.carousel-item.slider-frame,
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item.slider-frame,
-    .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-itemslider-frame {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        visibility: visible;
-        display: block;
-        visibility: visible;
-    }
-
+.card{
+  width: 20vw;
+  height: 100%;
+  margin-right: 1vw;
 }
